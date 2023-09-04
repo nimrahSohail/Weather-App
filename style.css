@@ -1,0 +1,73 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500&display=swap');
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('./BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.avif');
+    font-size: 120%;
+}
+
+.container{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius:30px;
+    width:100%;
+    max-width: 420px ;
+    margin: 1em;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+
+input.search-bar{
+    background:#7c7c7c2b;
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 20px);
+}
+
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 2px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position:relative;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
